@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="content">
+        <div class="left-side">
+            <div class="title">
+                <h1>Explore the World ✈️</h1>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="caption">
+                <p class="attention-notice">This is not a real online service!</p>
+                <p class="main-caption">Explore the world by subscribing to our newsletter. Be the first to get free coupons and get notified of deals to travel across the world.</p>
+                <p class="sub-caption">Sign up <em>now</em> to get started.</p>
+            </div>
+            <form action="#">
+                <div class="user-input">
+                    <div class="input-container">
+                        <label for="first_name">*First Name</label>
+                        <input type="text" name="first_name" id="first_name" required placeholder="Johnny" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="last_name">*Last Name</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Appleseed" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="email">*Email</label>
+                        <input type="email" name="email" id="email" placeholder="Johnny@appleseed.com" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" name="phone_number" id="phone_number" minlength="10" maxlength="10" placeholder="999-999-9999 (optional)">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="password">*Password</label>
+                        <input type="password" name="password" id="password" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="confirm_password">*Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" placeholder="Retype password" required>
+                    </div>
+                </div>
+                <div class="button-login">
+                    <div class="submit-button">
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <div class="already-user">
+                        <p>Already a user?... <a href="#">Click here</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
