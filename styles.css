@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Source Code Pro, sans-serif;
+}
+
+/* This allows the background to zoom in and out of the top right corner */
+
+body {
+    background-image: url(./images/mountain_image.jpeg);
+    background-size: cover;
+        -webkit-animation: slidein 10s;
+        animation: slidein 10s;    
+        
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate; 
+}
+
+@-webkit-keyframes slidein {
+    from {background-position: bottom; background-size:300px; }
+    to {background-position: -100px 0px;background-size:275px;}
+}
+    
+@keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Adjustment for the left side of the page */
+
+.left-side{
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh;
+    font-size: 2rem;
+    position: relative;
+    border-style: solid white;
+}
+
+/* Adjustment for the right side of the page */
+
+.right-side {
+    color: white;
+    opacity: 60%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+}
+
+.caption {
+    display: block;
+    color: black;
+}
+
+.attention-notice {
+    font-size: 2rem;
+}
+
+.main-caption {
+    padding-top: 2vh;
+    font-size: 1.3rem;
+    width: 70%;
+}
+
+.sub-caption {
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+}
+
+.input-container {
+    color: black;
+    display: flex;
+    align-self: center;
+    position: relative;
+    flex-flow: column wrap;
+    width: 10vw;
+    font-size: 1.2rem;
+    padding: 0.5vh;
+}
+
+.button-login {
+    display: block;
+    padding-top: 1.5vh;
+}
+
+.submit-button {
+    width: 4vw;
+    height: 4vh;
+}
+
+.already-user {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.submit-button:hover {
+    opacity: 100%;
+    background-color: white;
+}
